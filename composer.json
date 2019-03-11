@@ -1,0 +1,33 @@
+{
+    "name": "devoptn/event-tracking",
+    "description": "A simple event tracker for Laravel models",
+    "keywords": ["laravel", "devoption", "events", "event tracking", "event tracker", "eloquent"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DevOption",
+            "email": "derek@devoption.io"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "illuminate/database": "~5.1",
+        "illuminate/support": "~5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "DevOption\\EventTracking\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DevOption\\EventTracking\\EventServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
